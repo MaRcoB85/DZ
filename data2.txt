@@ -1,0 +1,52 @@
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function '<function add at 0x000002394105E160>' was called 1 times
+Function '<function add at 0x000002394105E160>' was called 2 times
+Function '<function add at 0x000002394105E160>' was called 3 times
+Function '<function add at 0x000002394105E160>' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
+Function 'add' was called 1 times
+Function 'add' was called 2 times
+Function 'add' was called 3 times
+Function 'add' was called 4 times
