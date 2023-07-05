@@ -1,0 +1,9 @@
+Create user
+Create post  (plus test)
+Delete user
+
+preparing_for_test.py   - run
+
+pytest -r A test_create_post.py   - run
+
+
