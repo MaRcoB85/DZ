@@ -1,0 +1,42 @@
+import sqlite3
+
+
+class AbstractRepository:
+    def __init__(self, db_path):
+        self._connection = sqlite3.connect(db_path, isolation_level=None)
+        self._cursor = self._connection.cursor()
+
+    def __del__(self):
+        if self._cursor:
+            self._cursor.close()
+        if self._connection:
+            self._connection.close()
+
+
+class DatabaseTable(AbstractRepository):
+    def __init__(self):
+        super().__init__("newdatabase.db")
+        self.table_name = "newtable"
+        self.create_table()
+
+    def create_table(self):
+        self._cursor.execute(f"CREATE TABLE IF NOT EXISTS {self.table_name} (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)")
+
+    def get_all_records(self):
+        self._cursor.execute(f"SELECT * FROM {self.table_name}")
+        records = self._cursor.fetchall()
+        return records
+
+    def add_records(self, records):
+        self._cursor.executemany(f"INSERT INTO {self.table_name} (name, age) VALUES (?, ?)")
+
+    def update_records(self, condition):
+        self._cursor.execute(f"UPDATE {self.table_name} SET name=?, age=? WHERE {condition}")
+
+    def get_records_by_condition(self, condition):
+        self._cursor.execute(f"SELECT * FROM {self.table_name} WHERE {condition}")
+        records = self._cursor.fetchall()
+        return records
+
+    def delete_records_by_condition(self, condition):
+        self._cursor.execute(f"DELETE FROM {self.table_name} WHERE {condition}")
